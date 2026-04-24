@@ -1,0 +1,25 @@
+# Socrate Configuration
+
+# AI Model Settings
+model:
+  provider: openai  # or: azure, anthropic, local
+  name: gpt-4  # Model name
+  temperature: 0.7  # Response creativity (0.0-1.0)
+  max_tokens: 2000  # Maximum response length
+
+# Teaching Style
+teaching:
+  style: socratic  # Question-driven dialogue approach
+  patience_level: high  # How many hints before revealing answers
+  difficulty_auto_adjust: true  # Adjust difficulty based on student progress
+
+# Paths (relative to project root)
+paths:
+  outlines: outlines
+  lessons: lessons
+  templates: .specify/templates
+
+# Logging
+logging:
+  level: INFO  # DEBUG, INFO, WARN, ERROR
+    file: logs/socrate.log
