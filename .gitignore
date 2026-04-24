@@ -38,6 +38,7 @@ htmlcov/
 .claude/
 !.claude/commands/
 !.claude/commands/**
+!.claude/commands/**
 .idea/
 *.swp
 *.swo
